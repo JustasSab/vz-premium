@@ -1,0 +1,59 @@
+@mixin mobile {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+  }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin bp-max-width($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+  
+@mixin bp-min-width($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin transition($type,$time,$timing) {
+    -webkit-transition: $type $time $timing;
+    -moz-transition: $type $time $timing;
+    -ms-transition: $type $time $timing;
+    -o-transition: $type $time $timing;
+    transition: $type $time $timing;
+}
+
+@mixin transition($type,$time,$timing) {
+    -webkit-transition: $type $time $timing;
+    -moz-transition: $type $time $timing;
+    -ms-transition: $type $time $timing;
+    -o-transition: $type $time $timing;
+    transition: $type $time $timing;
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}

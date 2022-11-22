@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1">
+        <title>„Verslo žinių“ prenumerata - Verslo žinios</title>
+        <link rel="icon" type="img/ico" href="https://www.vz.lt/favicon.ico" />
+        <link rel="apple-touch-icon" href="https://www.vz.lt/img/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://www.vz.lt/img/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://www.vz.lt/img/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://www.vz.lt/img/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://www.vz.lt/img/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.vz.lt/img/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://www.vz.lt/img/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://www.vz.lt/img/apple-touch-icon-152x152.png" />
+
+        <link rel="stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css" integrity="sha512-87wkTHUArAnTBwQ5XL6+G68i54R3TXYDZoXewRsdhIv/ztcEr2Z1Mrk+aXBCKOZUtih0XWiBhXv3/bWjHTL2Bw==" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=block" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" as="style" href="/skins/prenumerata/css/style.min.css?<?=filemtime(__FILE__)?>">
+        <link rel="stylesheet" as="style" href="/skins/prenumerata/css/ie.css?<?=filemtime(__FILE__)?>"> -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Google -->
+
+    <body>        
+        <div id="header" class="unfixed">
+            <div class="menu">
+                <div class="container">
+                    <div class="logo-new">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 173.8 79.1" style="enable-background:new 0 0 173.8 79.1;" xml:space="preserve" class="svg-image">
+                            <g>
+                                <g>
+                                    <g>
+                                        <polygon fill="#fff" points="34.9,60.7 34.9,24.2 48,24.2 48,60.7    "></polygon>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M73.3,60.7V32.5h-9.8v28.2H50.6V32.8c0-5.7,2.8-8.6,8.7-8.6h18.2c6.5,0,8.7,3.1,8.7,8.6v27.9L73.3,60.7     L73.3,60.7z"></path>
+                                    </g>
+                                    <g>
+                                        <polygon fill="#fff" points="88.8,60.7 88.8,24.2 101.8,24.2 101.8,60.7    "></polygon>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M130,60.7c0,0-7.5,0.1-8.7,0.1c-2,0-8.7-0.1-8.7-0.1c-4.4-0.1-8.7-1.6-8.7-8.7V33.5c0-4.4,1.5-9.2,8.9-9.3     c0,0,6.9-0.1,8.6-0.1c2,0,8.7,0.1,8.7,0.1c4.4,0.1,8.7,1.5,8.7,8.9v18.4C138.9,55.8,137.5,60.5,130,60.7L130,60.7z M125.9,32.5     h-9v19.9h9V32.5L125.9,32.5z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M164.9,60.7h-23.5v-7.8h21.4v-6.5h-12.7c-7.7,0-8.7-3.4-8.7-11c0-6.5,1.2-11.3,8.7-11.3H172v7.7h-18.3v6.5     H165c7.7,0,8.6,3.6,8.6,10.6C173.6,56.5,172.3,60.7,164.9,60.7L164.9,60.7z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M84.6,12.5v3.9h11.9v5.2H82.2c-4.3,0-5.2-2.8-5.2-5.2V5.7c0-3.4,1.7-5.4,5.2-5.5c0,0,4.1-0.1,5.2-0.1     s5,0.1,5,0.1c3.6,0.1,5,1.8,5,5.2v7.1L84.6,12.5L84.6,12.5z M89.9,4.7h-5.4v4.9h5.4V4.7L89.9,4.7z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M106.9,5.2v16.4h-7.6V5.5c0-3.1,1.5-5.2,5.2-5.2h9.4v4.9H106.9L106.9,5.2z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M150.5,16.8v4.9h-9.4c-3.7,0-5.2-2-5.2-5.2V0.3h7.6v16.5H150.5L150.5,16.8z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M129.1,21.5h-13.8V17h12.5v-3.8h-7.4c-4.5,0-5-2-5-6.4c0-3.9,0.7-6.5,5.1-6.5h12.7v4.5h-10.6v3.8h6.6     c4.5,0,5,2.1,5,6.2C134.2,19.1,133.5,21.5,129.1,21.5L129.1,21.5z"></path>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M167.5,21.5c0,0-4.4,0.1-5,0.1c-1.2,0-5.1-0.1-5.1-0.1c-2.6-0.1-5-0.9-5-5.1V5.7c0-2.6,0.9-5.3,5.2-5.5     c0,0,4-0.1,5-0.1c1.2,0,5.1,0.1,5.1,0.1c2.5,0.1,5.1,0.9,5.1,5.2v10.7C172.7,18.7,171.8,21.5,167.5,21.5L167.5,21.5z M165.1,5.2     h-5.2v11.6h5.2V5.2L165.1,5.2z"></path>
+                                    </g>
+                                    <g>
+                                        <polygon fill="#fff" points="65,16.2 64.2,16.2 61.1,0 53,0 57.9,21.5 71.1,21.5 76,0 68,0    "></polygon>
+                                    </g>
+                                    <g>
+                                        <path fill="#fff" d="M0,60.8v-7.4l17.6-20.7H0.8v-8.4h32v7.5L15.1,52.3h17.8v8.4L0,60.8L0,60.8z M22.8,21H11.2L5.5,10.9H13l4,5.6     l4.1-5.6h7.3L22.8,21L22.8,21z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <path fill="#fff" d="M118,66.9h4.4l2.7,7.1l2.7-7.1h4.4v12h-3.3v-7l-2.7,7h-2.5L121,72V79h-3V66.9z"></path>
+                                    <path fill="#fff" d="M138.2,66.9h3.4l4.8,12.1H143l-0.6-1.6h-5.1l-0.6,1.6h-3.3L138.2,66.9z M141.3,74.6l-1.5-3.8l-1.5,3.8H141.3z    "></path>
+                                    <path fill="#fff" d="M147.7,66.9h3.6l4.7,6.4v-6.4h3.2v12h-3.1l-5.2-7v7h-3.2V66.9z"></path>
+                                    <path fill="#fff" d="M160.7,72.9c0-4.6,2.7-6.2,6.5-6.2c3.8,0,6.5,1.6,6.5,6.2c0,4.6-2.7,6.2-6.5,6.2    C163.4,79.1,160.7,77.6,160.7,72.9z M170.4,73c0-1.9-0.6-3.2-3.1-3.2c-2.5,0-3.1,1.3-3.1,3.2s0.6,3.2,3.1,3.2    C169.7,76.2,170.4,74.9,170.4,73z"></path>
+                                </g>
+                                <g>
+                                    <rect x="0.2" y="71.9" fill="#fff" width="113.7" height="2.7"></rect>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>          
+                </div>          
+            </div>  
+        </div>
+        <div id="vz-prenumerata" class="content-holder">
+            <div class="container">
+                <div class="holder">
+                    <div class="content-top">
+                        <div class="columns">
+                            <div class="column column-left">
+                                <div class="left-overlay"></div>
+                                <div class="right-overlay"></div>
+                                <div class="top-overlay"></div>
+                                <div class="bottom-overlay"></div>
+                                <h1>
+                                    <span>VŽ Premium</span><br>
+                                    <span>Akmenės Cementas</span> 
+                                    <br>darbuotojams<br>
+                                </h1>
+                                <sub>iki 2019 10 17</sub>
+                            </div>
+               
+                            <div class="column column-right">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tr class="line">
+                                        <td class="text">
+                                            <p>Galėsite skaityti visus vz.lt, „Verslo žinių“ laikraščio, svarbiausius „Financial Times“ straipsnius</p>
+                                        </td>
+                                        <td class="image hide-for-small-only"><img src="https://www.vz.lt/img/products.png" data-interchange="[https://www.vz.lt/img/products@2x.png, (retina)]" alt="FT and Bloomberg" /></td>
+                                    </tr>
+                                    <tr class="line">
+                                        <td class="text">
+                                            <p>Darbo dienomis e. paštu gausite esminių aktualijų santrauką. Ji leis greitai susipažinti su svarbiausia informacija</p>
+                                        </td>
+                                        <td class="image hide-for-small-only"><img src="https://www.vz.lt/img/newsletter.png" data-interchange="[https://www.vz.lt/img/newsletter@2x.png, (retina)]" alt="Naujienlaiškis" /></td>
+                                    </tr>
+                                    <tr class="line">
+                                        <td class="text">
+                                            <p>Gausite asmeniškai jums parinktas naujienas pagal jūsų nurodytas dominančias sritis</p>
+                                        </td>
+                                        <td class="image hide-for-small-only"><img src="https://www.vz.lt/img/weekletter.png" data-interchange="[https://www.vz.lt/img/weekletter@2x.png, (retina)]" alt="Savaitraštis" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text">
+                                            <p>Kokybiškam laisvalaikiui galėsite rinktis pažintinio žurnalo „Verslo klasė“ turinį</p>
+                                        </td>
+                                        <td class="image hide-for-small-only"><img src="https://www.vz.lt/img/vk.png" data-interchange="[https://www.vz.lt/img/vk@2x.png, (retina)]" alt="Verslo klasė" /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Section -->
+                    <div class="registration-form">
+                        <div class="label">Užsiregistruokite<i></i></div>
+                        <form id="form" class="clearfix" action="" method="POST">
+                
+                            <div class="form-column field-form">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="text-input red">
+                                            <div class="input-wr">
+                                                <label class="label-placeholder" for="credentials">Vardas pavardė <span class="required">*</span></label>
+                                                <input type="text" id="name" name="name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="text-input red">
+                                            <div class="input-wr">
+                                                <label class="label-placeholder" for="email">E. pašto adresas <span class="required">*</span></label>
+                                                <input type="email" id="email" name="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="ajax-select red">
+                                            <div>
+                                                <label class="label-placeholder" for="positionValue">Pareigos <span class="required">*</span></label>
+                                                <input type="hidden" name="position">
+                                                <select class="select positions" data-url="/api/json/personal/positions" name="positionValue"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ajax-select red">
+                                            <div>
+                                                <label class="label-placeholder" for="department-select">Padalinys <span class="required">*</span></label>
+                                                <input type="hidden" name="department-select">
+                                                <select class="select department" data-url="/api/json/mailer/department" name="department"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="vertical">
+                            <div class="form-column option-form">
+                                <div class="columns">
+                                    <div class="column">
+                                        <span>Jus dominanti sritis:</span>
+                        
+                                        <div class="pd-radio w-text red">
+                                            <input id="VA" type="checkbox" name="sectors[]" value="1057" data-name="Verslo aplinka">
+                                            <label for="VA">
+                                            <span class="rectangle"><i class="checkmark"></i></span>
+                                            <p>Verslo aplinka</p>
+                                            </label>
+                                        </div>
+                        
+                                        <div class="input-holder clearfix">
+                                            <input id="VA" type="checkbox" name="sectors[]" value="1057" data-name="Verslo aplinka">
+                                            <label for="VA" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="VA" class="ckl tool" data-tip="Politika; Ekonomika; Teisė; Viešieji pirkimai." tabindex="1">Verslo aplinka</label>
+                                        </div>
+                        
+                                        <div class="input-holder clearfix">
+                                            <input id="PE" type="checkbox" name="sectors[]" value="1020" data-name="Pramonė">
+                                            <label for="PE" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="PE" class="ckl tool" data-tip="Agroverslas; Energetika." tabindex="1">Pramonė</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="MA" type="checkbox" name="sectors[]" value="1014" data-name="Rinkos">
+                                            <label for="MA" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="MA" class="ckl tool" data-tip="Akcijos; Valiutos; Žaliavos; Bankai; Asmeniniai finansai." tabindex="1">Rinkos</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="PR" type="checkbox" name="sectors[]" value="1021" data-name="Prekyba">
+                                            <label for="PR" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="PR" class="ckl tool" data-tip="Rinkodara; Reklama; Pardavimai; Eksportas." tabindex="1">Prekyba</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="FA" type="checkbox" name="sectors[]" value="1027" data-name="Finansai">
+                                            <label for="FA" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="FA" class="ckl tool" data-tip="Mokesčiai; Draudimas; Buhalterinė apskaita." tabindex="1">Finansai</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="NT" type="checkbox" name="sectors[]" value="1022" data-name="Statyba">
+                                            <label for="NT" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="NT" class="ckl tool" data-tip="NT; Statybinių medžiagų pramonė." tabindex="1">Statyba ir NT</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="PD" type="checkbox" name="sectors[]" value="1710" data-name="Pardavimai">
+                                            <label for="PD" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="PD" class="ckl">Pardavimai</label>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="column">
+                                        <span class="hidden-xs">&nbsp;</span>
+                        
+                                        <div class="input-holder clearfix">
+                                            <input id="SE" type="checkbox" name="sectors[]" value="1024" data-name="Paslaugos">
+                                            <label for="SE" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="SE" class="ckl tool" data-tip="HORECA; Inovacijos; Konsultavimas; Informavimas; Švietimas; Sveikatinimas; kt." tabindex="1">Paslaugos</label>
+                                        </div>
+                                        
+                                        <div class="input-holder clearfix">
+                                            <input id="BV" type="checkbox" name="sectors[]" value="1026" data-name="Vadyba">
+                                            <label for="BV" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="BV" class="ckl tool" data-tip="Įmonių valdymas; Personalas; Lyderystė." tabindex="1">Vadyba</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="TL" type="checkbox" name="sectors[]" value="1016" data-name="Logistika">
+                                            <label for="TL" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="TL" class="ckl tool" data-tip="Tiekimo grandinė; Sandėliavimas; Transportas." tabindex="1">Logistika ir transportas</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="WE" type="checkbox" name="sectors[]" value="1033" data-name="Laisvalaikis">
+                                            <label for="WE" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="WE" class="ckl tool" data-tip="Kultūra; Technologijos; Automobiliai; Hobiai; Sportas." tabindex="1">Laisvalaikis</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="GZ" type="checkbox" name="sectors[]" value="1032" data-name="Gazelė">
+                                            <label for="GZ" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="GZ" class="ckl tool" data-tip="Smulkus verslas; Startuoliai." tabindex="1">Gazelė</label>
+                                        </div>
+                                    
+                                        <div class="input-holder clearfix">
+                                            <input id="MR" type="checkbox" name="sectors[]" value="1028" data-name="Rinkodara">
+                                            <label for="MR" class="check-box company" style="display:inline-block"><i></i></label>
+                                            <label for="MR" class="ckl">Rinkodara</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <!-- Gauti prenumerata -->
+                        <div class="submit-form">
+                            <div class="column">
+                                <div class="pd-radio w-text red">
+                                    <input id="terms" type="checkbox" name="terms">
+                                    <label for="terms">
+                                        <span class="rectangle"><i class="checkmark"></i></span>
+                                        <p>Su <a style="color:#899fa9" target="_blank" href="http://www.vz.lt/prenumeratos-salygos">prenumeratos sąlygomis</a> ir <a style="color:#899fa9" target="_blank" href="http://www.vz.lt/privatumo-politika">privatumo politika</a> susipažinau ir sutinku <span class="required" aria-required="true">*</span></p>
+                                    </label>
+                                </div>
+                            </div>
+                            <button id="submit" form="form" type="submit">Gauti prenumeratoriaus kodą</button>
+                        </div> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <footer>
+            <p>„Verslo žinių“ Prenumeratos sk. telefonas: <a href="tel:+37052526330">+370 5 252 6330</a>, <a href="tel:+3702526408">+370 5 252 6408</a>, e. paštas: <a href="mailto:prenumerata@verslozinios.lt">prenumerata@verslozinios.lt</a></p>
+        </footer>
+               
+    </body>
+</html> 

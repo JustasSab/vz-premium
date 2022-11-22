@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+// || Variables
+
+// Colors
+$color-primary: #fff7f3;
+$border-color: #d2d2d2;
+// Font
+$font-family-primary: 'Open Sans', 'serif';
+$font-family-secondary: 'Karma', serif;
+$font-primary: #bb012a;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background: $color-primary;
+    color: rgb(0, 0, 0);
+    font-family: $font-family-primary;
+}
+
+.menu {
+    background: #bb012a;
+    // background:#2c2d2e;
+    border-bottom: 2px solid #991F29;
+        .logo-new {
+            padding: 20px 0;
+        svg {
+            width: 80px;
+            height: auto;
+        }
+    }
+}
+.container {
+    max-width: 1170px;
+    padding: 0;
+    .holder {
+        border: 1px solid $border-color;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .columns {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px;
+            .column-left {
+                border: 1px solid $border-color;
+                text-align: center;
+                padding: 30px;
+                position: relative;
+                .left-overlay {
+                    position: absolute;
+                    top: 45px;
+                    bottom: 45px;
+                    left: -1px;
+                    width: 1px;
+                    background: #fff6f3;
+                    align-items: center
+                }
+                .right-overlay {
+                    position: absolute;
+                    top: 45px;
+                    bottom: 45px;
+                    left: inherit;
+                    right: -1px;
+                    width: 1px;
+                    background: #fff6f3;
+                }
+                .top-overlay {
+                    position: absolute;
+                    top: -1px;
+                    left: 45px;
+                    right: 45px;
+                    height: 1px;
+                    background: #fff6f3;
+                }
+                .bottom-overlay {
+                    position: absolute;
+                    top: inherit;
+                    bottom: -1px;
+                    left: 45px;
+                    right: 45px;
+                    height: 1px;
+                    background: #fff6f3;
+                }
+            }
+            .column {
+                flex: 1;
+                h1 {
+                    font-family: $font-family-secondary;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    font-size: 44px;
+                span {
+                    color: $font-primary;
+                }
+            }
+            sub {
+                font-size: 65%;
+                line-height: 0;
+                bottom: 0.5em;
+            }
+        }
+        .column-right {
+            padding: 0 15px;
+                tbody {
+                    display: flex;
+                    flex-direction: column;
+                    tr.line {
+                        background-image: -webkit-repeating-radial-gradient(center center, rgba(102,102,102,0.2), rgba(102,102,102,0.2) 1px, transparent 1px, transparent 100%);
+                        background-image: -moz-repeating-radial-gradient(center center, rgba(102,102,102,0.2), rgba(102,102,102,0.2) 1px, transparent 1px, transparent 100%);
+                        background-image: -ms-repeating-radial-gradient(center center, rgba(102,102,102,0.2), rgba(102,102,102,0.2) 1px, transparent 1px, transparent 100%);
+                        background-image: repeating-radial-gradient(center center, rgba(102,102,102,0.2), rgba(102,102,102,0.2) 1px, transparent 1px, transparent 100%);
+                        -webkit-background-size: 10px 10px;
+                        -moz-background-size: 10px 10px;
+                        background-size: 10px 10px;
+                        background-repeat: repeat-x;
+                        background-position: bottom left;
+                    }
+                    tr {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        td {
+                            padding: 15px 10px;
+                            p {
+                                margin: 0;
+                                font-size: 13px;
+                                color: #666666;
+                                line-height: 1.6;
+                            }
+                        }
+                        .image {
+                            img {
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0;
+    .holder {
+        // Registration section
+        .registration-form {
+            background: #fff;
+            border: 1px solid $border-color;
+            border-width: 1px 0 1px 0;
+            padding: 0;
+            #form {
+                margin: 40px 0 30px 0;
+                width: 100%;
+                position: relative; 
+                /*.label {
+                    position: relative;
+                    display: block;
+                    width: 200px;
+                    padding: 7px 0 4px 0;
+                    line-height: 1.2;
+                    margin: -1px auto auto auto;
+                    background: #69767c;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 13px;
+                    font-family: $font-family-secondary;
+                    border-radius: 0;
+                    i {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        left: 50%;
+                        margin-left: -9px;
+                        bottom: -8px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 9px 9px 0 9px;
+                        border-color: #69767c transparent;
+                    }
+                }*/
+                /*.label::before {
+                    position: absolute;
+                    content: "";x
+                    left: -17px;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 17.5px 30px 17.5px;
+                    border-color: #ffffff transparent;
+                }
+                .label::after {
+                    position: absolute;
+                    content: "";
+                    right: -17px;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 17.5px 30px 17.5px;
+                    border-color: #ffffff transparent;
+                }*/
+                .vertical {
+                    border-left: 1px solid #616161;
+                    height: 275px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                }
+                .field-form {
+                    width: 50%;
+                    float: left;
+                    padding: 0 15px;
+                    .form-columns {
+                        display: inline-flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        padding: 0 0 0 20px;
+                        width: 100%;
+                        .form-column {
+                            width: 50%;
+                            /*label {
+                                display: block;
+                                margin-bottom: 15px;
+                                color: #000;
+                                font-size: 14px;
+                                line-height: 1.5;
+                                width: 90%;
+                                cursor: pointer;
+                                span.required {
+                                    color: #bd0025;
+                                }
+                            }*/
+                            /*input {
+                                border: 1px solid #d8d2d1;
+                                border-radius: 3px;
+                                outline: none;
+                            }
+                            input[type="text"] {
+                                background-color: #fff;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-color: #ccc;
+                                box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+                                color: rgba(0,0,0,0.75);
+                                display: block;
+                                font-family: inherit;
+                                font-size: 0.875rem;
+                                height: 2.3125rem;
+                                width: 90%;
+                                padding: 0.5rem;
+                            }*/
+                            .error-field {
+                                margin: 25px;
+                            }
+                            .error {
+                                color: $font-primary;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                .option-form {
+                    width: 50%;
+                    float: left;
+                    padding: 0 15px;
+                    .columns {
+                        display: inline-flex;
+                        flex-flow: row wrap;
+                        width: 100%;
+                        padding: 0 15px;
+                        .column {
+                            padding: 0 15px;
+                            width: 50%;
+                            span {
+                                display: block;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 15px;
+                                color: #000;
+                            }
+                            .input-holder {
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                margin-bottom: 15px;
+                                label {
+                                    outline: 0;
+                                    margin: 0 10px 0 0;
+                                    padding: 0;
+                                    float: none;
+                                    color: #4d4d4d;
+                                    cursor: pointer;
+                                    display: block;
+                                    font-size: 0.875rem;
+                                    font-weight: normal;
+                                    line-height: 1.5;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Footer
+footer {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background: #e3e3e3;
+    color: #2c2d2e;
+    font-size: 14px;
+    p {
+        margin: 0;
+        line-height: 1.6;
+    }
+    a {
+        color: #bd0025;
+        text-decoration: none;
+        &:hover, &:focus {
+            color: #7197aa;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 750px;
+        .holder {
+            .columns {
+                display: block;
+                .column {
+                    width: 100%;
+                }
+                .column-right {
+                    padding: 15px;
+                    height: auto;
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+            .registration-form {
+                #form {
+                    .vertical {
+                        display: none;
+                    }
+                    .field-form {
+                        width: 100%;
+                        padding: 0 20px;
+                        .columns {
+                            display: block;
+                            padding: 0;
+                            .column {
+                                width: 100%;
+                                height: auto;
+                                label {
+                                    width: 100%;
+                                }
+                                .email {
+                                    margin-top: 15px;
+                                }
+                                input[type="text"] {
+                                width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .option-form {
+                        width: 100%;
+                        padding: 0 20px;
+                        .columns {
+                            padding: 0;
+                            .column {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menu {
+        .container {
+            .logo-new {
+                padding: 10px 20px;
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        .holder {
+            margin: 0;
+            border: none;
+            .columns {
+                display: block;
+                .column {
+                    width: 100%;
+                    h1 {
+                        font-size: 28px;
+                    }
+                }
+                .column-right {
+                    height: auto;
+                    p {
+                        width: 90%;
+                    }
+                }
+            }
+            .registration-form {
+                #form {
+                    margin: 40px 0 15px 0;
+                    height: auto;
+                    .vertical {
+                        display: none;
+                    }
+                    .field-form {
+                        width: 100%;
+                        .columns {
+                            display: block;
+                            .column {
+                                width: 100%;
+                                label {
+                                    width: 100%;
+                                }
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .option-form {
+                        .columns {
+                            flex-flow: column wrap;
+                            padding: 0;
+                            .column:last-child {
+                                margin-top: -40px;
+                            }
+                            .column {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 441px) {
+    .container {
+        .holder {
+            .columns {
+                .column-right {
+                    height: auto;
+                    td.text {
+                        text-align: center;
+                        p {
+                        width: 100%;
+                        }
+                    }
+                    td.image {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 297px) {
+    .container {
+        .holder {
+            .columns {
+                .column-right {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

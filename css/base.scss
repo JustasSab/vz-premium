@@ -1,0 +1,72 @@
+$montserrat: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+$green: #13ce65;
+$lightblue: #3d88ab;
+$red: #BB012A;
+$blue: blue;
+$white: #fff;
+$black: #000;
+$error: rgb(208, 28, 28);
+
+$input-height: 50px;
+$input-hover-color: #f9f9f9;
+$input-border-color: #d2d2d2;
+$input-text-color: #5d5d5d;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$laptop-width: 992px;
+$desktop-width: 1200px;
+
+@keyframes fade {
+    0% { 
+        opacity: 0;
+    }
+    20% { 
+        opacity: 0; 
+    }
+    40% {
+        opacity: 1;
+    }
+    60% { 
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+label.error{
+    color:#d01c1c;
+    margin:0px;
+    font-size:13px;
+    font-family: $montserrat;
+    margin-top:6px;
+    line-height:1.2;
+    font-weight:500;
+
+    a{
+        color: #055dff;
+        font-weight: 600;
+    }
+}
+
+.wrapper{
+    width:100%;
+    max-width:1140px;
+    padding:0px 20px;
+    margin:0 auto;
+}
+
+.show-for-press{
+    display:none;
+}
+
+.show-for-type-company{
+    display:none;
+}
+
+#ie-screen + #app{
+    display:none;
+}
